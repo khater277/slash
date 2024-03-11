@@ -20,6 +20,7 @@ Future<T?> showAlertDialog<T>({
           canPop: false,
           child: AlertDialog(
             backgroundColor: AppColors.lightBlack,
+            surfaceTintColor: Colors.transparent,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(AppSize.s10),
             ),
