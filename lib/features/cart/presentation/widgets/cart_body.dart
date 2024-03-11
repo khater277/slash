@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:slash/app/injector.dart';
+import 'package:slash/config/navigation.dart';
 import 'package:slash/core/local_storage/cart_storage.dart';
 import 'package:slash/core/shared_widgets/expansion_tile.dart';
 import 'package:slash/core/shared_widgets/no_items_founded.dart';
@@ -19,7 +20,13 @@ class CartScreenBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<CartCubit, CartState>(
+    return BlocConsumer<CartCubit, CartState>(
+      listener: (context, state) {
+        state.maybeWhen(
+          deleteProductFromCart: (id) => Go.back(context: context),
+          orElse: () {},
+        );
+      },
       builder: (context, state) {
         return Padding(
             padding: EdgeInsets.symmetric(horizontal: AppWidth.w10),
