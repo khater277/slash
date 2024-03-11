@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:slash/app/injector.dart';
 import 'package:slash/features/product_details/cubit/product_details_cubit.dart';
-import 'package:slash/features/product_details/presentation/widgets/carousel_view.dart';
+import 'package:slash/features/product_details/presentation/widgets/image_slider/carousel_view.dart';
 
 class ProductDetailsImageSlider extends StatelessWidget {
   const ProductDetailsImageSlider({
@@ -41,18 +41,8 @@ class ProductDetailsImageSlider extends StatelessWidget {
               index: index,
             );
           },
-          onPageChanged: (value) {
-            // print("========>${value} ${di<ProductDetailsCubit>().imageIndex}");
-            di<ProductDetailsCubit>().changeImageIndexFromSlider(
-              imageIndex: value,
-            );
-          },
-          // (di<ProductDetailsCubit>().imageIndex - value).abs() == 1
-          // ? di<ProductDetailsCubit>()
-          //     .changeImageIndexFromSlider(imageIndex: value)
-          //     : () {},
-          // onPageChanged: (value) => di<ProductDetailsCubit>()
-          // .changeImageIndexFromSlider(imageIndex: value),
+          onPageChanged: (value) => di<ProductDetailsCubit>()
+              .changeImageIndexFromSlider(imageIndex: value),
         ),
       ),
     );

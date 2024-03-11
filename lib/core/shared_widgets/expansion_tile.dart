@@ -1,23 +1,26 @@
 import 'package:flutter/material.dart';
-import 'package:slash/app/injector.dart';
 import 'package:slash/config/app_theme.dart';
-import 'package:slash/core/shared_widgets/text.dart';
 import 'package:slash/core/utils/app_colors.dart';
-import 'package:slash/core/utils/app_values.dart';
-import 'package:slash/features/product_details/cubit/product_details_cubit.dart';
 
-class ProductDescription extends StatefulWidget {
+class CustomExpansionTile extends StatefulWidget {
   final ScrollController scrollController;
-  const ProductDescription({
+  final Widget title;
+  final double borderRadius;
+  final List<Widget> children;
+
+  const CustomExpansionTile({
     super.key,
     required this.scrollController,
+    required this.title,
+    required this.borderRadius,
+    required this.children,
   });
 
   @override
-  State<ProductDescription> createState() => _ProductDescriptionState();
+  State<CustomExpansionTile> createState() => _CustomExpansionTileState();
 }
 
-class _ProductDescriptionState extends State<ProductDescription> {
+class _CustomExpansionTileState extends State<CustomExpansionTile> {
   final GlobalKey expansionTileKey = GlobalKey();
   void _scrollToSelectedContent({required GlobalKey expansionTileKey}) {
     final keyContext = expansionTileKey.currentContext;
@@ -38,21 +41,22 @@ class _ProductDescriptionState extends State<ProductDescription> {
       ),
       child: ExpansionTile(
         key: expansionTileKey,
-        title: const LargeHeadText(text: "Description"),
+        title: widget.title,
         shape: RoundedRectangleBorder(
           side: const BorderSide(
             color: AppColors.lightBlack,
           ),
-          borderRadius: BorderRadius.circular(AppSize.s20),
+          borderRadius: BorderRadius.circular(widget.borderRadius),
         ),
-        iconColor: AppColors.grey,
+        iconColor: AppColors.primary,
+        collapsedIconColor: AppColors.primary,
         backgroundColor: AppColors.lightBlack,
         collapsedBackgroundColor: AppColors.lightBlack,
         collapsedShape: RoundedRectangleBorder(
           side: const BorderSide(
             color: AppColors.lightBlack,
           ),
-          borderRadius: BorderRadius.circular(AppSize.s20),
+          borderRadius: BorderRadius.circular(widget.borderRadius),
         ),
         expandedCrossAxisAlignment: CrossAxisAlignment.center,
         onExpansionChanged: (value) {
@@ -60,19 +64,7 @@ class _ProductDescriptionState extends State<ProductDescription> {
             _scrollToSelectedContent(expansionTileKey: expansionTileKey);
           }
         },
-        children: [
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: AppWidth.w10)
-                .add(EdgeInsets.only(bottom: AppHeight.h10)),
-            child: SmallHeadText(
-              text: di<ProductDetailsCubit>()
-                  .productDetails!
-                  .productDetailsModel!
-                  .description!,
-              maxLines: 100,
-            ),
-          ),
-        ],
+        children: widget.children,
       ),
     );
   }

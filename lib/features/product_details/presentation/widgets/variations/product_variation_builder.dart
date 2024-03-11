@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:slash/core/shared_widgets/text.dart';
+import 'package:slash/core/utils/app_fonts.dart';
 import 'package:slash/core/utils/app_values.dart';
 
 class ProductVariationBuilder extends StatelessWidget {
@@ -19,7 +20,10 @@ class ProductVariationBuilder extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        LargeHeadText(text: title),
+        SmallHeadText(
+          text: title,
+          size: FontSize.s15,
+        ),
         SizedBox(height: AppHeight.h5),
         Center(
           child: SizedBox(

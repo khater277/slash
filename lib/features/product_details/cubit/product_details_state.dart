@@ -23,4 +23,12 @@ class ProductDetailsState with _$ProductDetailsState {
       _ChangeSelectedSizeIndex;
   const factory ProductDetailsState.changeSelectedMaterialIndex(int index) =
       _ChangeSelectedMaterialIndex;
+  const factory ProductDetailsState.addProductToCart(int id) =
+      _AddProductToCart;
+  const factory ProductDetailsState.deleteProductFromCart(int id) =
+      _DeleteProductFromCart;
+  const factory ProductDetailsState.addProductToFavorite(int id) =
+      _AddProductToFavorite;
+  const factory ProductDetailsState.deleteProductFromFavorite(int id) =
+      _DeleteProductFromFavorite;
 }

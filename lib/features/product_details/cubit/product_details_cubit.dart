@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:slash/features/product_details/data/models/product_details_model/get_product_details_response.dart';
+import 'package:slash/features/product_details/data/models/product_details_model/product_details_model.dart';
 import 'package:slash/features/product_details/data/models/product_details_model/product_properties_value.dart';
 import 'package:slash/features/product_details/data/models/product_details_model/product_varient_image.dart';
 import 'package:slash/features/product_details/domain/usecases/get_product_details_usecase.dart';
@@ -10,12 +10,13 @@ part 'product_details_state.dart';
 
 class ProductDetailsCubit extends Cubit<ProductDetailsState> {
   final GetProductDetailsUsecase _getProductDetailsUsecase;
+
   ProductDetailsCubit({
     required GetProductDetailsUsecase getProductDetailsUsecase,
   })  : _getProductDetailsUsecase = getProductDetailsUsecase,
         super(const ProductDetailsState.initial());
 
-  GetProductDetailsResponse? productDetails;
+  ProductDetailsModel? productDetails;
   void getProductDetails({required int id}) async {
     emit(const ProductDetailsState.getProductDetailsLoading());
     final response = await _getProductDetailsUsecase.call(id);
@@ -23,10 +24,9 @@ class ProductDetailsCubit extends Cubit<ProductDetailsState> {
       (failure) => emit(
           ProductDetailsState.getProductDetailsError(failure.getMessage())),
       (data) {
-        productDetails = data;
-        sliderImages =
-            data.productDetailsModel!.variations!.first.productVarientImages!;
-        price = data.productDetailsModel!.variations!.first.price!;
+        productDetails = data.productDetailsModel;
+        sliderImages = productDetails!.variations!.first.productVarientImages!;
+        price = productDetails!.variations!.first.price!;
         sizesList = data
             .productDetailsModel!.variations!.first.productPropertiesValues!
             .where((element) => element.property == "Size")
@@ -72,15 +72,12 @@ class ProductDetailsCubit extends Cubit<ProductDetailsState> {
     imageIndex = 0;
     sub = 1;
     // if
-    sliderImages = productDetails!
-        .productDetailsModel!.variations![index].productVarientImages!;
-    price = productDetails!.productDetailsModel!.variations![index].price!;
-    sizesList = productDetails!
-        .productDetailsModel!.variations![index].productPropertiesValues!
+    sliderImages = productDetails!.variations![index].productVarientImages!;
+    price = productDetails!.variations![index].price!;
+    sizesList = productDetails!.variations![index].productPropertiesValues!
         .where((element) => element.property == "Size")
         .toList();
-    materialsList = productDetails!
-        .productDetailsModel!.variations![index].productPropertiesValues!
+    materialsList = productDetails!.variations![index].productPropertiesValues!
         .where((element) => element.property == "Materials")
         .toList();
     emit(ProductDetailsState.changeVariationData(index));

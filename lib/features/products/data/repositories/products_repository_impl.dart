@@ -4,7 +4,7 @@ import 'package:slash/core/errors/failures.dart';
 import 'package:slash/core/network/network_info.dart';
 import 'package:slash/features/products/data/datasources/products_remote_data_source.dart';
 import 'package:slash/features/products/data/models/get_products_response/get_products_response.dart';
-import 'package:slash/features/products/domain/repositories/prooducts_repository.dart';
+import 'package:slash/features/products/domain/repositories/products_repository.dart';
 
 class ProductsRepositoryImpl implements ProductsRepository {
   final NetworkInfo _networkInfo;

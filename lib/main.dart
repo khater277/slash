@@ -5,13 +5,14 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:slash/app/app.dart';
 import 'package:slash/app/bloc_observer.dart';
 import 'package:slash/app/injector.dart';
+import 'package:slash/core/local_storage/cart_storage.dart';
 
 //
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   setupGetIt();
   await Hive.initFlutter();
-  // await di<TasksStorage>().init();
+  await di<CartStorage>().init();
   Bloc.observer = MyBlocObserver();
   runApp(const MyApp());
 }

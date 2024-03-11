@@ -17,18 +17,13 @@ class BrandDetails extends StatelessWidget {
       children: [
         CircleAvatar(
           radius: AppSize.s22,
-          backgroundImage: CachedNetworkImageProvider(di<ProductDetailsCubit>()
-              .productDetails!
-              .productDetailsModel!
-              .brandImage!),
+          backgroundImage: CachedNetworkImageProvider(
+              di<ProductDetailsCubit>().productDetails!.brandImage!),
         ),
         SizedBox(height: AppHeight.h5),
         SmallHeadText(
-          text: di<ProductDetailsCubit>()
-                  .productDetails!
-                  .productDetailsModel!
-                  .brandName ??
-              "unknown",
+          text:
+              di<ProductDetailsCubit>().productDetails!.brandName ?? "unknown",
           size: FontSize.s13,
         ),
       ],

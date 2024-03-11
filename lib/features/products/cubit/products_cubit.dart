@@ -3,8 +3,8 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:slash/features/products/data/models/get_products_response/product_model.dart';
 import 'package:slash/features/products/domain/usecases/get_products_usecase.dart';
 
-part 'products_state.dart';
 part 'products_cubit.freezed.dart';
+part 'products_state.dart';
 
 class ProductsCubit extends Cubit<ProductsState> {
   final GetProductsUsecase _getProductsUsecase;
@@ -13,6 +13,7 @@ class ProductsCubit extends Cubit<ProductsState> {
         super(const ProductsState.initial());
 
   int page = 1;
+  int pagesLength = 1;
   List<ProductModel> products = [];
   void getProducts() async {
     emit(const ProductsState.getProductsLoading());
@@ -22,21 +23,24 @@ class ProductsCubit extends Cubit<ProductsState> {
       (data) {
         products = data.products!;
         page++;
+        pagesLength = data.pagination!.pages!;
         emit(const ProductsState.getProductsSuccess());
       },
     );
   }
 
   void loadMore() async {
-    emit(const ProductsState.loadMoreLoading());
-    final response = await _getProductsUsecase.call(page);
-    response.fold(
-      (failure) => emit(ProductsState.loadMoreError(failure.getMessage())),
-      (data) {
-        page++;
-        products += data.products!;
-        emit(const ProductsState.loadMoreSuccess());
-      },
-    );
+    if (page <= pagesLength) {
+      emit(const ProductsState.loadMoreLoading());
+      final response = await _getProductsUsecase.call(page);
+      response.fold(
+        (failure) => emit(ProductsState.loadMoreError(failure.getMessage())),
+        (data) {
+          page++;
+          products += data.products!;
+          emit(const ProductsState.loadMoreSuccess());
+        },
+      );
+    }
   }
 }

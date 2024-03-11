@@ -18,6 +18,7 @@ class AppTheme {
       iconTheme: const IconThemeData(
         color: Colors.white,
       ),
+
       textTheme: TextTheme(
         bodyLarge: getSemiBoldStyle(fontColor: Colors.white),
         bodyMedium: getMediumStyle(fontColor: Colors.white),
@@ -31,14 +32,14 @@ class AppTheme {
           elevation: 0,
           backgroundColor: AppColors.black,
           surfaceTintColor: AppColors.black,
-          systemOverlayStyle: SystemUiOverlayStyle(
+          systemOverlayStyle: const SystemUiOverlayStyle(
             statusBarIconBrightness: Brightness.light,
             statusBarBrightness: Brightness.dark,
             statusBarColor: AppColors.black,
           ),
           titleTextStyle:
               getBoldStyle(fontSize: FontSize.s20, fontColor: AppColors.white),
-          actionsIconTheme: IconThemeData(
+          actionsIconTheme: const IconThemeData(
             color: Colors.white,
           )),
       cardColor: AppColors.black,

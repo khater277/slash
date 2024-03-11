@@ -20,7 +20,9 @@ ProductVarientImage _$ProductVarientImageFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$ProductVarientImage {
+  @HiveField(0)
   int? get id => throw _privateConstructorUsedError;
+  @HiveField(1)
   @JsonKey(name: 'image_path')
   String? get imagePath => throw _privateConstructorUsedError;
 
@@ -36,7 +38,9 @@ abstract class $ProductVarientImageCopyWith<$Res> {
           ProductVarientImage value, $Res Function(ProductVarientImage) then) =
       _$ProductVarientImageCopyWithImpl<$Res, ProductVarientImage>;
   @useResult
-  $Res call({int? id, @JsonKey(name: 'image_path') String? imagePath});
+  $Res call(
+      {@HiveField(0) int? id,
+      @HiveField(1) @JsonKey(name: 'image_path') String? imagePath});
 }
 
 /// @nodoc
@@ -76,7 +80,9 @@ abstract class _$$ProductVarientImageImplCopyWith<$Res>
       __$$ProductVarientImageImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({int? id, @JsonKey(name: 'image_path') String? imagePath});
+  $Res call(
+      {@HiveField(0) int? id,
+      @HiveField(1) @JsonKey(name: 'image_path') String? imagePath});
 }
 
 /// @nodoc
@@ -110,14 +116,17 @@ class __$$ProductVarientImageImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$ProductVarientImageImpl implements _ProductVarientImage {
   _$ProductVarientImageImpl(
-      {this.id, @JsonKey(name: 'image_path') this.imagePath});
+      {@HiveField(0) this.id,
+      @HiveField(1) @JsonKey(name: 'image_path') this.imagePath});
 
   factory _$ProductVarientImageImpl.fromJson(Map<String, dynamic> json) =>
       _$$ProductVarientImageImplFromJson(json);
 
   @override
+  @HiveField(0)
   final int? id;
   @override
+  @HiveField(1)
   @JsonKey(name: 'image_path')
   final String? imagePath;
 
@@ -157,16 +166,18 @@ class _$ProductVarientImageImpl implements _ProductVarientImage {
 
 abstract class _ProductVarientImage implements ProductVarientImage {
   factory _ProductVarientImage(
-          {final int? id,
-          @JsonKey(name: 'image_path') final String? imagePath}) =
+          {@HiveField(0) final int? id,
+          @HiveField(1) @JsonKey(name: 'image_path') final String? imagePath}) =
       _$ProductVarientImageImpl;
 
   factory _ProductVarientImage.fromJson(Map<String, dynamic> json) =
       _$ProductVarientImageImpl.fromJson;
 
   @override
+  @HiveField(0)
   int? get id;
   @override
+  @HiveField(1)
   @JsonKey(name: 'image_path')
   String? get imagePath;
   @override

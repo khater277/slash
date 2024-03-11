@@ -16,7 +16,7 @@ class ProductModel with _$ProductModel {
     String? type,
     @JsonKey(name: 'Brands') Brands? brands,
     @JsonKey(name: 'ProductVariations')
-        List<ProductVariation>? productVariations,
+    List<ProductVariation>? productVariations,
   }) = _ProductModel;
 
   factory ProductModel.fromJson(Map<String, dynamic> json) =>

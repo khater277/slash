@@ -2,7 +2,7 @@ import 'package:dartz/dartz.dart';
 import 'package:slash/core/base_usecase/base_usecase.dart';
 import 'package:slash/core/errors/failures.dart';
 import 'package:slash/features/products/data/models/get_products_response/get_products_response.dart';
-import 'package:slash/features/products/domain/repositories/prooducts_repository.dart';
+import 'package:slash/features/products/domain/repositories/products_repository.dart';
 
 // Future<Either<Failure, GetProductsResponse>> getProducts({required int page});
 

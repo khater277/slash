@@ -20,16 +20,24 @@ Variation _$VariationFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$Variation {
+  @HiveField(0)
   int? get id => throw _privateConstructorUsedError;
+  @HiveField(1)
   int? get price => throw _privateConstructorUsedError;
+  @HiveField(2)
   int? get quantity => throw _privateConstructorUsedError;
+  @HiveField(3)
   bool? get inStock => throw _privateConstructorUsedError;
   @JsonKey(name: 'ProductVarientImages')
+  @HiveField(4)
   List<ProductVarientImage>? get productVarientImages =>
       throw _privateConstructorUsedError;
+  @HiveField(5)
   List<ProductPropertiesValue>? get productPropertiesValues =>
       throw _privateConstructorUsedError;
+  @HiveField(6)
   String? get productStatus => throw _privateConstructorUsedError;
+  @HiveField(7)
   bool? get isDefault => throw _privateConstructorUsedError;
   @JsonKey(name: 'product_variation_status_id')
   int? get productVariationStatusId => throw _privateConstructorUsedError;
@@ -46,15 +54,16 @@ abstract class $VariationCopyWith<$Res> {
       _$VariationCopyWithImpl<$Res, Variation>;
   @useResult
   $Res call(
-      {int? id,
-      int? price,
-      int? quantity,
-      bool? inStock,
+      {@HiveField(0) int? id,
+      @HiveField(1) int? price,
+      @HiveField(2) int? quantity,
+      @HiveField(3) bool? inStock,
       @JsonKey(name: 'ProductVarientImages')
+      @HiveField(4)
       List<ProductVarientImage>? productVarientImages,
-      List<ProductPropertiesValue>? productPropertiesValues,
-      String? productStatus,
-      bool? isDefault,
+      @HiveField(5) List<ProductPropertiesValue>? productPropertiesValues,
+      @HiveField(6) String? productStatus,
+      @HiveField(7) bool? isDefault,
       @JsonKey(name: 'product_variation_status_id')
       int? productVariationStatusId});
 }
@@ -132,15 +141,16 @@ abstract class _$$VariationImplCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {int? id,
-      int? price,
-      int? quantity,
-      bool? inStock,
+      {@HiveField(0) int? id,
+      @HiveField(1) int? price,
+      @HiveField(2) int? quantity,
+      @HiveField(3) bool? inStock,
       @JsonKey(name: 'ProductVarientImages')
+      @HiveField(4)
       List<ProductVarientImage>? productVarientImages,
-      List<ProductPropertiesValue>? productPropertiesValues,
-      String? productStatus,
-      bool? isDefault,
+      @HiveField(5) List<ProductPropertiesValue>? productPropertiesValues,
+      @HiveField(6) String? productStatus,
+      @HiveField(7) bool? isDefault,
       @JsonKey(name: 'product_variation_status_id')
       int? productVariationStatusId});
 }
@@ -211,15 +221,16 @@ class __$$VariationImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$VariationImpl implements _Variation {
   _$VariationImpl(
-      {this.id,
-      this.price,
-      this.quantity,
-      this.inStock,
+      {@HiveField(0) this.id,
+      @HiveField(1) this.price,
+      @HiveField(2) this.quantity,
+      @HiveField(3) this.inStock,
       @JsonKey(name: 'ProductVarientImages')
+      @HiveField(4)
       final List<ProductVarientImage>? productVarientImages,
-      final List<ProductPropertiesValue>? productPropertiesValues,
-      this.productStatus,
-      this.isDefault,
+      @HiveField(5) final List<ProductPropertiesValue>? productPropertiesValues,
+      @HiveField(6) this.productStatus,
+      @HiveField(7) this.isDefault,
       @JsonKey(name: 'product_variation_status_id')
       this.productVariationStatusId})
       : _productVarientImages = productVarientImages,
@@ -229,16 +240,21 @@ class _$VariationImpl implements _Variation {
       _$$VariationImplFromJson(json);
 
   @override
+  @HiveField(0)
   final int? id;
   @override
+  @HiveField(1)
   final int? price;
   @override
+  @HiveField(2)
   final int? quantity;
   @override
+  @HiveField(3)
   final bool? inStock;
   final List<ProductVarientImage>? _productVarientImages;
   @override
   @JsonKey(name: 'ProductVarientImages')
+  @HiveField(4)
   List<ProductVarientImage>? get productVarientImages {
     final value = _productVarientImages;
     if (value == null) return null;
@@ -250,6 +266,7 @@ class _$VariationImpl implements _Variation {
 
   final List<ProductPropertiesValue>? _productPropertiesValues;
   @override
+  @HiveField(5)
   List<ProductPropertiesValue>? get productPropertiesValues {
     final value = _productPropertiesValues;
     if (value == null) return null;
@@ -260,8 +277,10 @@ class _$VariationImpl implements _Variation {
   }
 
   @override
+  @HiveField(6)
   final String? productStatus;
   @override
+  @HiveField(7)
   final bool? isDefault;
   @override
   @JsonKey(name: 'product_variation_status_id')
@@ -325,15 +344,16 @@ class _$VariationImpl implements _Variation {
 
 abstract class _Variation implements Variation {
   factory _Variation(
-      {final int? id,
-      final int? price,
-      final int? quantity,
-      final bool? inStock,
+      {@HiveField(0) final int? id,
+      @HiveField(1) final int? price,
+      @HiveField(2) final int? quantity,
+      @HiveField(3) final bool? inStock,
       @JsonKey(name: 'ProductVarientImages')
+      @HiveField(4)
       final List<ProductVarientImage>? productVarientImages,
-      final List<ProductPropertiesValue>? productPropertiesValues,
-      final String? productStatus,
-      final bool? isDefault,
+      @HiveField(5) final List<ProductPropertiesValue>? productPropertiesValues,
+      @HiveField(6) final String? productStatus,
+      @HiveField(7) final bool? isDefault,
       @JsonKey(name: 'product_variation_status_id')
       final int? productVariationStatusId}) = _$VariationImpl;
 
@@ -341,21 +361,29 @@ abstract class _Variation implements Variation {
       _$VariationImpl.fromJson;
 
   @override
+  @HiveField(0)
   int? get id;
   @override
+  @HiveField(1)
   int? get price;
   @override
+  @HiveField(2)
   int? get quantity;
   @override
+  @HiveField(3)
   bool? get inStock;
   @override
   @JsonKey(name: 'ProductVarientImages')
+  @HiveField(4)
   List<ProductVarientImage>? get productVarientImages;
   @override
+  @HiveField(5)
   List<ProductPropertiesValue>? get productPropertiesValues;
   @override
+  @HiveField(6)
   String? get productStatus;
   @override
+  @HiveField(7)
   bool? get isDefault;
   @override
   @JsonKey(name: 'product_variation_status_id')

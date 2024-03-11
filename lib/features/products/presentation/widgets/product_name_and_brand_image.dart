@@ -22,7 +22,7 @@ class ProductNameAndBrandImage extends StatelessWidget {
           child: LargeHeadText(
             text: productName,
             size: FontSize.s13,
-            maxLines: 2,
+            maxLines: 3,
           ),
         ),
         SizedBox(width: AppWidth.w10),

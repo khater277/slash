@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:slash/app/injector.dart';
 import 'package:slash/core/utils/app_values.dart';
 import 'package:slash/features/product_details/cubit/product_details_cubit.dart';
-import 'package:slash/features/product_details/presentation/widgets/product_details_row_image.dart';
+import 'package:slash/features/product_details/presentation/widgets/image_slider/product_details_row_image.dart';
 
 class ProductDetailsImagesRow extends StatelessWidget {
   const ProductDetailsImagesRow({

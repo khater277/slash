@@ -14,7 +14,7 @@ class ProductVariation with _$ProductVariation {
     @JsonKey(name: 'product_id') int? productId,
     int? price,
     @JsonKey(name: 'ProductVarientImages')
-        List<ProductVarientImage>? productVarientImages,
+    List<ProductVarientImage>? productVarientImages,
   }) = _ProductVariation;
 
   factory ProductVariation.fromJson(Map<String, dynamic> json) =>

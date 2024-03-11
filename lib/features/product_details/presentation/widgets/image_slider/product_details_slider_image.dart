@@ -6,8 +6,8 @@ import 'package:slash/core/utils/app_colors.dart';
 import 'package:slash/core/utils/app_values.dart';
 import 'package:slash/core/utils/icons_broken.dart';
 
-class ProductDetailsImage extends StatelessWidget {
-  const ProductDetailsImage({
+class ProductDetailsSliderImage extends StatelessWidget {
+  const ProductDetailsSliderImage({
     super.key,
     required this.index,
     required this.imageName,
@@ -22,17 +22,17 @@ class ProductDetailsImage extends StatelessWidget {
         imageUrl: imageName,
         imageBuilder: (context, imageProvider) => Container(
           decoration: BoxDecoration(
-            color: AppColors.lightBlack,
+            color: AppColors.white,
             borderRadius: BorderRadius.circular(AppSize.s30),
             image: DecorationImage(
               image: imageProvider,
-              fit: BoxFit.fill,
+              fit: BoxFit.contain,
             ),
           ),
         ),
         placeholder: (context, s) => Container(
           decoration: BoxDecoration(
-            color: AppColors.lightBlack,
+            color: AppColors.white,
             borderRadius: BorderRadius.circular(AppSize.s30),
           ),
           child: Center(
@@ -49,7 +49,7 @@ class ProductDetailsImage extends StatelessWidget {
         ) {
           return Container(
             decoration: BoxDecoration(
-              color: AppColors.lightBlack,
+              color: AppColors.white,
               borderRadius: BorderRadius.circular(AppSize.s30),
             ),
             child: Center(

@@ -17,11 +17,7 @@ class ProductNameAndPrice extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         LargeHeadText(
-          text: di<ProductDetailsCubit>()
-                  .productDetails!
-                  .productDetailsModel!
-                  .name ??
-              "unknown",
+          text: di<ProductDetailsCubit>().productDetails!.name ?? "unknown",
           maxLines: 2,
         ),
         SizedBox(height: AppHeight.h10),

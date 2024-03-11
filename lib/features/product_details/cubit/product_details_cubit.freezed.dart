@@ -29,6 +29,10 @@ mixin _$ProductDetailsState {
     required TResult Function(int index) changeVariationData,
     required TResult Function(int index) changeSelectedSizeIndex,
     required TResult Function(int index) changeSelectedMaterialIndex,
+    required TResult Function(int id) addProductToCart,
+    required TResult Function(int id) deleteProductFromCart,
+    required TResult Function(int id) addProductToFavorite,
+    required TResult Function(int id) deleteProductFromFavorite,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -44,6 +48,10 @@ mixin _$ProductDetailsState {
     TResult? Function(int index)? changeVariationData,
     TResult? Function(int index)? changeSelectedSizeIndex,
     TResult? Function(int index)? changeSelectedMaterialIndex,
+    TResult? Function(int id)? addProductToCart,
+    TResult? Function(int id)? deleteProductFromCart,
+    TResult? Function(int id)? addProductToFavorite,
+    TResult? Function(int id)? deleteProductFromFavorite,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -59,6 +67,10 @@ mixin _$ProductDetailsState {
     TResult Function(int index)? changeVariationData,
     TResult Function(int index)? changeSelectedSizeIndex,
     TResult Function(int index)? changeSelectedMaterialIndex,
+    TResult Function(int id)? addProductToCart,
+    TResult Function(int id)? deleteProductFromCart,
+    TResult Function(int id)? addProductToFavorite,
+    TResult Function(int id)? deleteProductFromFavorite,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -83,6 +95,12 @@ mixin _$ProductDetailsState {
         changeSelectedSizeIndex,
     required TResult Function(_ChangeSelectedMaterialIndex value)
         changeSelectedMaterialIndex,
+    required TResult Function(_AddProductToCart value) addProductToCart,
+    required TResult Function(_DeleteProductFromCart value)
+        deleteProductFromCart,
+    required TResult Function(_AddProductToFavorite value) addProductToFavorite,
+    required TResult Function(_DeleteProductFromFavorite value)
+        deleteProductFromFavorite,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -102,6 +120,11 @@ mixin _$ProductDetailsState {
     TResult? Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
     TResult? Function(_ChangeSelectedMaterialIndex value)?
         changeSelectedMaterialIndex,
+    TResult? Function(_AddProductToCart value)? addProductToCart,
+    TResult? Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult? Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult? Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -119,6 +142,11 @@ mixin _$ProductDetailsState {
     TResult Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
     TResult Function(_ChangeSelectedMaterialIndex value)?
         changeSelectedMaterialIndex,
+    TResult Function(_AddProductToCart value)? addProductToCart,
+    TResult Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -191,6 +219,10 @@ class _$InitialImpl implements _Initial {
     required TResult Function(int index) changeVariationData,
     required TResult Function(int index) changeSelectedSizeIndex,
     required TResult Function(int index) changeSelectedMaterialIndex,
+    required TResult Function(int id) addProductToCart,
+    required TResult Function(int id) deleteProductFromCart,
+    required TResult Function(int id) addProductToFavorite,
+    required TResult Function(int id) deleteProductFromFavorite,
   }) {
     return initial();
   }
@@ -209,6 +241,10 @@ class _$InitialImpl implements _Initial {
     TResult? Function(int index)? changeVariationData,
     TResult? Function(int index)? changeSelectedSizeIndex,
     TResult? Function(int index)? changeSelectedMaterialIndex,
+    TResult? Function(int id)? addProductToCart,
+    TResult? Function(int id)? deleteProductFromCart,
+    TResult? Function(int id)? addProductToFavorite,
+    TResult? Function(int id)? deleteProductFromFavorite,
   }) {
     return initial?.call();
   }
@@ -227,6 +263,10 @@ class _$InitialImpl implements _Initial {
     TResult Function(int index)? changeVariationData,
     TResult Function(int index)? changeSelectedSizeIndex,
     TResult Function(int index)? changeSelectedMaterialIndex,
+    TResult Function(int id)? addProductToCart,
+    TResult Function(int id)? deleteProductFromCart,
+    TResult Function(int id)? addProductToFavorite,
+    TResult Function(int id)? deleteProductFromFavorite,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -257,6 +297,12 @@ class _$InitialImpl implements _Initial {
         changeSelectedSizeIndex,
     required TResult Function(_ChangeSelectedMaterialIndex value)
         changeSelectedMaterialIndex,
+    required TResult Function(_AddProductToCart value) addProductToCart,
+    required TResult Function(_DeleteProductFromCart value)
+        deleteProductFromCart,
+    required TResult Function(_AddProductToFavorite value) addProductToFavorite,
+    required TResult Function(_DeleteProductFromFavorite value)
+        deleteProductFromFavorite,
   }) {
     return initial(this);
   }
@@ -279,6 +325,11 @@ class _$InitialImpl implements _Initial {
     TResult? Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
     TResult? Function(_ChangeSelectedMaterialIndex value)?
         changeSelectedMaterialIndex,
+    TResult? Function(_AddProductToCart value)? addProductToCart,
+    TResult? Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult? Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult? Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
   }) {
     return initial?.call(this);
   }
@@ -299,6 +350,11 @@ class _$InitialImpl implements _Initial {
     TResult Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
     TResult Function(_ChangeSelectedMaterialIndex value)?
         changeSelectedMaterialIndex,
+    TResult Function(_AddProductToCart value)? addProductToCart,
+    TResult Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -361,6 +417,10 @@ class _$InitPageControllerImpl implements _InitPageController {
     required TResult Function(int index) changeVariationData,
     required TResult Function(int index) changeSelectedSizeIndex,
     required TResult Function(int index) changeSelectedMaterialIndex,
+    required TResult Function(int id) addProductToCart,
+    required TResult Function(int id) deleteProductFromCart,
+    required TResult Function(int id) addProductToFavorite,
+    required TResult Function(int id) deleteProductFromFavorite,
   }) {
     return initPageController();
   }
@@ -379,6 +439,10 @@ class _$InitPageControllerImpl implements _InitPageController {
     TResult? Function(int index)? changeVariationData,
     TResult? Function(int index)? changeSelectedSizeIndex,
     TResult? Function(int index)? changeSelectedMaterialIndex,
+    TResult? Function(int id)? addProductToCart,
+    TResult? Function(int id)? deleteProductFromCart,
+    TResult? Function(int id)? addProductToFavorite,
+    TResult? Function(int id)? deleteProductFromFavorite,
   }) {
     return initPageController?.call();
   }
@@ -397,6 +461,10 @@ class _$InitPageControllerImpl implements _InitPageController {
     TResult Function(int index)? changeVariationData,
     TResult Function(int index)? changeSelectedSizeIndex,
     TResult Function(int index)? changeSelectedMaterialIndex,
+    TResult Function(int id)? addProductToCart,
+    TResult Function(int id)? deleteProductFromCart,
+    TResult Function(int id)? addProductToFavorite,
+    TResult Function(int id)? deleteProductFromFavorite,
     required TResult orElse(),
   }) {
     if (initPageController != null) {
@@ -427,6 +495,12 @@ class _$InitPageControllerImpl implements _InitPageController {
         changeSelectedSizeIndex,
     required TResult Function(_ChangeSelectedMaterialIndex value)
         changeSelectedMaterialIndex,
+    required TResult Function(_AddProductToCart value) addProductToCart,
+    required TResult Function(_DeleteProductFromCart value)
+        deleteProductFromCart,
+    required TResult Function(_AddProductToFavorite value) addProductToFavorite,
+    required TResult Function(_DeleteProductFromFavorite value)
+        deleteProductFromFavorite,
   }) {
     return initPageController(this);
   }
@@ -449,6 +523,11 @@ class _$InitPageControllerImpl implements _InitPageController {
     TResult? Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
     TResult? Function(_ChangeSelectedMaterialIndex value)?
         changeSelectedMaterialIndex,
+    TResult? Function(_AddProductToCart value)? addProductToCart,
+    TResult? Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult? Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult? Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
   }) {
     return initPageController?.call(this);
   }
@@ -469,6 +548,11 @@ class _$InitPageControllerImpl implements _InitPageController {
     TResult Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
     TResult Function(_ChangeSelectedMaterialIndex value)?
         changeSelectedMaterialIndex,
+    TResult Function(_AddProductToCart value)? addProductToCart,
+    TResult Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
     required TResult orElse(),
   }) {
     if (initPageController != null) {
@@ -533,6 +617,10 @@ class _$DisposePageControllerImpl implements _DisposePageController {
     required TResult Function(int index) changeVariationData,
     required TResult Function(int index) changeSelectedSizeIndex,
     required TResult Function(int index) changeSelectedMaterialIndex,
+    required TResult Function(int id) addProductToCart,
+    required TResult Function(int id) deleteProductFromCart,
+    required TResult Function(int id) addProductToFavorite,
+    required TResult Function(int id) deleteProductFromFavorite,
   }) {
     return disposePageController();
   }
@@ -551,6 +639,10 @@ class _$DisposePageControllerImpl implements _DisposePageController {
     TResult? Function(int index)? changeVariationData,
     TResult? Function(int index)? changeSelectedSizeIndex,
     TResult? Function(int index)? changeSelectedMaterialIndex,
+    TResult? Function(int id)? addProductToCart,
+    TResult? Function(int id)? deleteProductFromCart,
+    TResult? Function(int id)? addProductToFavorite,
+    TResult? Function(int id)? deleteProductFromFavorite,
   }) {
     return disposePageController?.call();
   }
@@ -569,6 +661,10 @@ class _$DisposePageControllerImpl implements _DisposePageController {
     TResult Function(int index)? changeVariationData,
     TResult Function(int index)? changeSelectedSizeIndex,
     TResult Function(int index)? changeSelectedMaterialIndex,
+    TResult Function(int id)? addProductToCart,
+    TResult Function(int id)? deleteProductFromCart,
+    TResult Function(int id)? addProductToFavorite,
+    TResult Function(int id)? deleteProductFromFavorite,
     required TResult orElse(),
   }) {
     if (disposePageController != null) {
@@ -599,6 +695,12 @@ class _$DisposePageControllerImpl implements _DisposePageController {
         changeSelectedSizeIndex,
     required TResult Function(_ChangeSelectedMaterialIndex value)
         changeSelectedMaterialIndex,
+    required TResult Function(_AddProductToCart value) addProductToCart,
+    required TResult Function(_DeleteProductFromCart value)
+        deleteProductFromCart,
+    required TResult Function(_AddProductToFavorite value) addProductToFavorite,
+    required TResult Function(_DeleteProductFromFavorite value)
+        deleteProductFromFavorite,
   }) {
     return disposePageController(this);
   }
@@ -621,6 +723,11 @@ class _$DisposePageControllerImpl implements _DisposePageController {
     TResult? Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
     TResult? Function(_ChangeSelectedMaterialIndex value)?
         changeSelectedMaterialIndex,
+    TResult? Function(_AddProductToCart value)? addProductToCart,
+    TResult? Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult? Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult? Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
   }) {
     return disposePageController?.call(this);
   }
@@ -641,6 +748,11 @@ class _$DisposePageControllerImpl implements _DisposePageController {
     TResult Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
     TResult Function(_ChangeSelectedMaterialIndex value)?
         changeSelectedMaterialIndex,
+    TResult Function(_AddProductToCart value)? addProductToCart,
+    TResult Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
     required TResult orElse(),
   }) {
     if (disposePageController != null) {
@@ -707,6 +819,10 @@ class _$GetProductDetailsLoadingImpl implements _GetProductDetailsLoading {
     required TResult Function(int index) changeVariationData,
     required TResult Function(int index) changeSelectedSizeIndex,
     required TResult Function(int index) changeSelectedMaterialIndex,
+    required TResult Function(int id) addProductToCart,
+    required TResult Function(int id) deleteProductFromCart,
+    required TResult Function(int id) addProductToFavorite,
+    required TResult Function(int id) deleteProductFromFavorite,
   }) {
     return getProductDetailsLoading();
   }
@@ -725,6 +841,10 @@ class _$GetProductDetailsLoadingImpl implements _GetProductDetailsLoading {
     TResult? Function(int index)? changeVariationData,
     TResult? Function(int index)? changeSelectedSizeIndex,
     TResult? Function(int index)? changeSelectedMaterialIndex,
+    TResult? Function(int id)? addProductToCart,
+    TResult? Function(int id)? deleteProductFromCart,
+    TResult? Function(int id)? addProductToFavorite,
+    TResult? Function(int id)? deleteProductFromFavorite,
   }) {
     return getProductDetailsLoading?.call();
   }
@@ -743,6 +863,10 @@ class _$GetProductDetailsLoadingImpl implements _GetProductDetailsLoading {
     TResult Function(int index)? changeVariationData,
     TResult Function(int index)? changeSelectedSizeIndex,
     TResult Function(int index)? changeSelectedMaterialIndex,
+    TResult Function(int id)? addProductToCart,
+    TResult Function(int id)? deleteProductFromCart,
+    TResult Function(int id)? addProductToFavorite,
+    TResult Function(int id)? deleteProductFromFavorite,
     required TResult orElse(),
   }) {
     if (getProductDetailsLoading != null) {
@@ -773,6 +897,12 @@ class _$GetProductDetailsLoadingImpl implements _GetProductDetailsLoading {
         changeSelectedSizeIndex,
     required TResult Function(_ChangeSelectedMaterialIndex value)
         changeSelectedMaterialIndex,
+    required TResult Function(_AddProductToCart value) addProductToCart,
+    required TResult Function(_DeleteProductFromCart value)
+        deleteProductFromCart,
+    required TResult Function(_AddProductToFavorite value) addProductToFavorite,
+    required TResult Function(_DeleteProductFromFavorite value)
+        deleteProductFromFavorite,
   }) {
     return getProductDetailsLoading(this);
   }
@@ -795,6 +925,11 @@ class _$GetProductDetailsLoadingImpl implements _GetProductDetailsLoading {
     TResult? Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
     TResult? Function(_ChangeSelectedMaterialIndex value)?
         changeSelectedMaterialIndex,
+    TResult? Function(_AddProductToCart value)? addProductToCart,
+    TResult? Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult? Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult? Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
   }) {
     return getProductDetailsLoading?.call(this);
   }
@@ -815,6 +950,11 @@ class _$GetProductDetailsLoadingImpl implements _GetProductDetailsLoading {
     TResult Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
     TResult Function(_ChangeSelectedMaterialIndex value)?
         changeSelectedMaterialIndex,
+    TResult Function(_AddProductToCart value)? addProductToCart,
+    TResult Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
     required TResult orElse(),
   }) {
     if (getProductDetailsLoading != null) {
@@ -881,6 +1021,10 @@ class _$GetProductDetailsSuccessImpl implements _GetProductDetailsSuccess {
     required TResult Function(int index) changeVariationData,
     required TResult Function(int index) changeSelectedSizeIndex,
     required TResult Function(int index) changeSelectedMaterialIndex,
+    required TResult Function(int id) addProductToCart,
+    required TResult Function(int id) deleteProductFromCart,
+    required TResult Function(int id) addProductToFavorite,
+    required TResult Function(int id) deleteProductFromFavorite,
   }) {
     return getProductDetailsSuccess();
   }
@@ -899,6 +1043,10 @@ class _$GetProductDetailsSuccessImpl implements _GetProductDetailsSuccess {
     TResult? Function(int index)? changeVariationData,
     TResult? Function(int index)? changeSelectedSizeIndex,
     TResult? Function(int index)? changeSelectedMaterialIndex,
+    TResult? Function(int id)? addProductToCart,
+    TResult? Function(int id)? deleteProductFromCart,
+    TResult? Function(int id)? addProductToFavorite,
+    TResult? Function(int id)? deleteProductFromFavorite,
   }) {
     return getProductDetailsSuccess?.call();
   }
@@ -917,6 +1065,10 @@ class _$GetProductDetailsSuccessImpl implements _GetProductDetailsSuccess {
     TResult Function(int index)? changeVariationData,
     TResult Function(int index)? changeSelectedSizeIndex,
     TResult Function(int index)? changeSelectedMaterialIndex,
+    TResult Function(int id)? addProductToCart,
+    TResult Function(int id)? deleteProductFromCart,
+    TResult Function(int id)? addProductToFavorite,
+    TResult Function(int id)? deleteProductFromFavorite,
     required TResult orElse(),
   }) {
     if (getProductDetailsSuccess != null) {
@@ -947,6 +1099,12 @@ class _$GetProductDetailsSuccessImpl implements _GetProductDetailsSuccess {
         changeSelectedSizeIndex,
     required TResult Function(_ChangeSelectedMaterialIndex value)
         changeSelectedMaterialIndex,
+    required TResult Function(_AddProductToCart value) addProductToCart,
+    required TResult Function(_DeleteProductFromCart value)
+        deleteProductFromCart,
+    required TResult Function(_AddProductToFavorite value) addProductToFavorite,
+    required TResult Function(_DeleteProductFromFavorite value)
+        deleteProductFromFavorite,
   }) {
     return getProductDetailsSuccess(this);
   }
@@ -969,6 +1127,11 @@ class _$GetProductDetailsSuccessImpl implements _GetProductDetailsSuccess {
     TResult? Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
     TResult? Function(_ChangeSelectedMaterialIndex value)?
         changeSelectedMaterialIndex,
+    TResult? Function(_AddProductToCart value)? addProductToCart,
+    TResult? Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult? Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult? Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
   }) {
     return getProductDetailsSuccess?.call(this);
   }
@@ -989,6 +1152,11 @@ class _$GetProductDetailsSuccessImpl implements _GetProductDetailsSuccess {
     TResult Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
     TResult Function(_ChangeSelectedMaterialIndex value)?
         changeSelectedMaterialIndex,
+    TResult Function(_AddProductToCart value)? addProductToCart,
+    TResult Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
     required TResult orElse(),
   }) {
     if (getProductDetailsSuccess != null) {
@@ -1082,6 +1250,10 @@ class _$GetProductDetailsErrorImpl implements _GetProductDetailsError {
     required TResult Function(int index) changeVariationData,
     required TResult Function(int index) changeSelectedSizeIndex,
     required TResult Function(int index) changeSelectedMaterialIndex,
+    required TResult Function(int id) addProductToCart,
+    required TResult Function(int id) deleteProductFromCart,
+    required TResult Function(int id) addProductToFavorite,
+    required TResult Function(int id) deleteProductFromFavorite,
   }) {
     return getProductDetailsError(errorMsg);
   }
@@ -1100,6 +1272,10 @@ class _$GetProductDetailsErrorImpl implements _GetProductDetailsError {
     TResult? Function(int index)? changeVariationData,
     TResult? Function(int index)? changeSelectedSizeIndex,
     TResult? Function(int index)? changeSelectedMaterialIndex,
+    TResult? Function(int id)? addProductToCart,
+    TResult? Function(int id)? deleteProductFromCart,
+    TResult? Function(int id)? addProductToFavorite,
+    TResult? Function(int id)? deleteProductFromFavorite,
   }) {
     return getProductDetailsError?.call(errorMsg);
   }
@@ -1118,6 +1294,10 @@ class _$GetProductDetailsErrorImpl implements _GetProductDetailsError {
     TResult Function(int index)? changeVariationData,
     TResult Function(int index)? changeSelectedSizeIndex,
     TResult Function(int index)? changeSelectedMaterialIndex,
+    TResult Function(int id)? addProductToCart,
+    TResult Function(int id)? deleteProductFromCart,
+    TResult Function(int id)? addProductToFavorite,
+    TResult Function(int id)? deleteProductFromFavorite,
     required TResult orElse(),
   }) {
     if (getProductDetailsError != null) {
@@ -1148,6 +1328,12 @@ class _$GetProductDetailsErrorImpl implements _GetProductDetailsError {
         changeSelectedSizeIndex,
     required TResult Function(_ChangeSelectedMaterialIndex value)
         changeSelectedMaterialIndex,
+    required TResult Function(_AddProductToCart value) addProductToCart,
+    required TResult Function(_DeleteProductFromCart value)
+        deleteProductFromCart,
+    required TResult Function(_AddProductToFavorite value) addProductToFavorite,
+    required TResult Function(_DeleteProductFromFavorite value)
+        deleteProductFromFavorite,
   }) {
     return getProductDetailsError(this);
   }
@@ -1170,6 +1356,11 @@ class _$GetProductDetailsErrorImpl implements _GetProductDetailsError {
     TResult? Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
     TResult? Function(_ChangeSelectedMaterialIndex value)?
         changeSelectedMaterialIndex,
+    TResult? Function(_AddProductToCart value)? addProductToCart,
+    TResult? Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult? Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult? Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
   }) {
     return getProductDetailsError?.call(this);
   }
@@ -1190,6 +1381,11 @@ class _$GetProductDetailsErrorImpl implements _GetProductDetailsError {
     TResult Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
     TResult Function(_ChangeSelectedMaterialIndex value)?
         changeSelectedMaterialIndex,
+    TResult Function(_AddProductToCart value)? addProductToCart,
+    TResult Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
     required TResult orElse(),
   }) {
     if (getProductDetailsError != null) {
@@ -1288,6 +1484,10 @@ class _$ChangeImageIndexFromSliderImpl implements _ChangeImageIndexFromSlider {
     required TResult Function(int index) changeVariationData,
     required TResult Function(int index) changeSelectedSizeIndex,
     required TResult Function(int index) changeSelectedMaterialIndex,
+    required TResult Function(int id) addProductToCart,
+    required TResult Function(int id) deleteProductFromCart,
+    required TResult Function(int id) addProductToFavorite,
+    required TResult Function(int id) deleteProductFromFavorite,
   }) {
     return changeImageIndexFromSlider(index);
   }
@@ -1306,6 +1506,10 @@ class _$ChangeImageIndexFromSliderImpl implements _ChangeImageIndexFromSlider {
     TResult? Function(int index)? changeVariationData,
     TResult? Function(int index)? changeSelectedSizeIndex,
     TResult? Function(int index)? changeSelectedMaterialIndex,
+    TResult? Function(int id)? addProductToCart,
+    TResult? Function(int id)? deleteProductFromCart,
+    TResult? Function(int id)? addProductToFavorite,
+    TResult? Function(int id)? deleteProductFromFavorite,
   }) {
     return changeImageIndexFromSlider?.call(index);
   }
@@ -1324,6 +1528,10 @@ class _$ChangeImageIndexFromSliderImpl implements _ChangeImageIndexFromSlider {
     TResult Function(int index)? changeVariationData,
     TResult Function(int index)? changeSelectedSizeIndex,
     TResult Function(int index)? changeSelectedMaterialIndex,
+    TResult Function(int id)? addProductToCart,
+    TResult Function(int id)? deleteProductFromCart,
+    TResult Function(int id)? addProductToFavorite,
+    TResult Function(int id)? deleteProductFromFavorite,
     required TResult orElse(),
   }) {
     if (changeImageIndexFromSlider != null) {
@@ -1354,6 +1562,12 @@ class _$ChangeImageIndexFromSliderImpl implements _ChangeImageIndexFromSlider {
         changeSelectedSizeIndex,
     required TResult Function(_ChangeSelectedMaterialIndex value)
         changeSelectedMaterialIndex,
+    required TResult Function(_AddProductToCart value) addProductToCart,
+    required TResult Function(_DeleteProductFromCart value)
+        deleteProductFromCart,
+    required TResult Function(_AddProductToFavorite value) addProductToFavorite,
+    required TResult Function(_DeleteProductFromFavorite value)
+        deleteProductFromFavorite,
   }) {
     return changeImageIndexFromSlider(this);
   }
@@ -1376,6 +1590,11 @@ class _$ChangeImageIndexFromSliderImpl implements _ChangeImageIndexFromSlider {
     TResult? Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
     TResult? Function(_ChangeSelectedMaterialIndex value)?
         changeSelectedMaterialIndex,
+    TResult? Function(_AddProductToCart value)? addProductToCart,
+    TResult? Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult? Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult? Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
   }) {
     return changeImageIndexFromSlider?.call(this);
   }
@@ -1396,6 +1615,11 @@ class _$ChangeImageIndexFromSliderImpl implements _ChangeImageIndexFromSlider {
     TResult Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
     TResult Function(_ChangeSelectedMaterialIndex value)?
         changeSelectedMaterialIndex,
+    TResult Function(_AddProductToCart value)? addProductToCart,
+    TResult Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
     required TResult orElse(),
   }) {
     if (changeImageIndexFromSlider != null) {
@@ -1494,6 +1718,10 @@ class _$ChangeImageIndexFromRowImpl implements _ChangeImageIndexFromRow {
     required TResult Function(int index) changeVariationData,
     required TResult Function(int index) changeSelectedSizeIndex,
     required TResult Function(int index) changeSelectedMaterialIndex,
+    required TResult Function(int id) addProductToCart,
+    required TResult Function(int id) deleteProductFromCart,
+    required TResult Function(int id) addProductToFavorite,
+    required TResult Function(int id) deleteProductFromFavorite,
   }) {
     return changeImageIndexFromRow(index);
   }
@@ -1512,6 +1740,10 @@ class _$ChangeImageIndexFromRowImpl implements _ChangeImageIndexFromRow {
     TResult? Function(int index)? changeVariationData,
     TResult? Function(int index)? changeSelectedSizeIndex,
     TResult? Function(int index)? changeSelectedMaterialIndex,
+    TResult? Function(int id)? addProductToCart,
+    TResult? Function(int id)? deleteProductFromCart,
+    TResult? Function(int id)? addProductToFavorite,
+    TResult? Function(int id)? deleteProductFromFavorite,
   }) {
     return changeImageIndexFromRow?.call(index);
   }
@@ -1530,6 +1762,10 @@ class _$ChangeImageIndexFromRowImpl implements _ChangeImageIndexFromRow {
     TResult Function(int index)? changeVariationData,
     TResult Function(int index)? changeSelectedSizeIndex,
     TResult Function(int index)? changeSelectedMaterialIndex,
+    TResult Function(int id)? addProductToCart,
+    TResult Function(int id)? deleteProductFromCart,
+    TResult Function(int id)? addProductToFavorite,
+    TResult Function(int id)? deleteProductFromFavorite,
     required TResult orElse(),
   }) {
     if (changeImageIndexFromRow != null) {
@@ -1560,6 +1796,12 @@ class _$ChangeImageIndexFromRowImpl implements _ChangeImageIndexFromRow {
         changeSelectedSizeIndex,
     required TResult Function(_ChangeSelectedMaterialIndex value)
         changeSelectedMaterialIndex,
+    required TResult Function(_AddProductToCart value) addProductToCart,
+    required TResult Function(_DeleteProductFromCart value)
+        deleteProductFromCart,
+    required TResult Function(_AddProductToFavorite value) addProductToFavorite,
+    required TResult Function(_DeleteProductFromFavorite value)
+        deleteProductFromFavorite,
   }) {
     return changeImageIndexFromRow(this);
   }
@@ -1582,6 +1824,11 @@ class _$ChangeImageIndexFromRowImpl implements _ChangeImageIndexFromRow {
     TResult? Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
     TResult? Function(_ChangeSelectedMaterialIndex value)?
         changeSelectedMaterialIndex,
+    TResult? Function(_AddProductToCart value)? addProductToCart,
+    TResult? Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult? Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult? Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
   }) {
     return changeImageIndexFromRow?.call(this);
   }
@@ -1602,6 +1849,11 @@ class _$ChangeImageIndexFromRowImpl implements _ChangeImageIndexFromRow {
     TResult Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
     TResult Function(_ChangeSelectedMaterialIndex value)?
         changeSelectedMaterialIndex,
+    TResult Function(_AddProductToCart value)? addProductToCart,
+    TResult Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
     required TResult orElse(),
   }) {
     if (changeImageIndexFromRow != null) {
@@ -1697,6 +1949,10 @@ class _$ChangeVariationDataImpl implements _ChangeVariationData {
     required TResult Function(int index) changeVariationData,
     required TResult Function(int index) changeSelectedSizeIndex,
     required TResult Function(int index) changeSelectedMaterialIndex,
+    required TResult Function(int id) addProductToCart,
+    required TResult Function(int id) deleteProductFromCart,
+    required TResult Function(int id) addProductToFavorite,
+    required TResult Function(int id) deleteProductFromFavorite,
   }) {
     return changeVariationData(index);
   }
@@ -1715,6 +1971,10 @@ class _$ChangeVariationDataImpl implements _ChangeVariationData {
     TResult? Function(int index)? changeVariationData,
     TResult? Function(int index)? changeSelectedSizeIndex,
     TResult? Function(int index)? changeSelectedMaterialIndex,
+    TResult? Function(int id)? addProductToCart,
+    TResult? Function(int id)? deleteProductFromCart,
+    TResult? Function(int id)? addProductToFavorite,
+    TResult? Function(int id)? deleteProductFromFavorite,
   }) {
     return changeVariationData?.call(index);
   }
@@ -1733,6 +1993,10 @@ class _$ChangeVariationDataImpl implements _ChangeVariationData {
     TResult Function(int index)? changeVariationData,
     TResult Function(int index)? changeSelectedSizeIndex,
     TResult Function(int index)? changeSelectedMaterialIndex,
+    TResult Function(int id)? addProductToCart,
+    TResult Function(int id)? deleteProductFromCart,
+    TResult Function(int id)? addProductToFavorite,
+    TResult Function(int id)? deleteProductFromFavorite,
     required TResult orElse(),
   }) {
     if (changeVariationData != null) {
@@ -1763,6 +2027,12 @@ class _$ChangeVariationDataImpl implements _ChangeVariationData {
         changeSelectedSizeIndex,
     required TResult Function(_ChangeSelectedMaterialIndex value)
         changeSelectedMaterialIndex,
+    required TResult Function(_AddProductToCart value) addProductToCart,
+    required TResult Function(_DeleteProductFromCart value)
+        deleteProductFromCart,
+    required TResult Function(_AddProductToFavorite value) addProductToFavorite,
+    required TResult Function(_DeleteProductFromFavorite value)
+        deleteProductFromFavorite,
   }) {
     return changeVariationData(this);
   }
@@ -1785,6 +2055,11 @@ class _$ChangeVariationDataImpl implements _ChangeVariationData {
     TResult? Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
     TResult? Function(_ChangeSelectedMaterialIndex value)?
         changeSelectedMaterialIndex,
+    TResult? Function(_AddProductToCart value)? addProductToCart,
+    TResult? Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult? Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult? Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
   }) {
     return changeVariationData?.call(this);
   }
@@ -1805,6 +2080,11 @@ class _$ChangeVariationDataImpl implements _ChangeVariationData {
     TResult Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
     TResult Function(_ChangeSelectedMaterialIndex value)?
         changeSelectedMaterialIndex,
+    TResult Function(_AddProductToCart value)? addProductToCart,
+    TResult Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
     required TResult orElse(),
   }) {
     if (changeVariationData != null) {
@@ -1903,6 +2183,10 @@ class _$ChangeSelectedSizeIndexImpl implements _ChangeSelectedSizeIndex {
     required TResult Function(int index) changeVariationData,
     required TResult Function(int index) changeSelectedSizeIndex,
     required TResult Function(int index) changeSelectedMaterialIndex,
+    required TResult Function(int id) addProductToCart,
+    required TResult Function(int id) deleteProductFromCart,
+    required TResult Function(int id) addProductToFavorite,
+    required TResult Function(int id) deleteProductFromFavorite,
   }) {
     return changeSelectedSizeIndex(index);
   }
@@ -1921,6 +2205,10 @@ class _$ChangeSelectedSizeIndexImpl implements _ChangeSelectedSizeIndex {
     TResult? Function(int index)? changeVariationData,
     TResult? Function(int index)? changeSelectedSizeIndex,
     TResult? Function(int index)? changeSelectedMaterialIndex,
+    TResult? Function(int id)? addProductToCart,
+    TResult? Function(int id)? deleteProductFromCart,
+    TResult? Function(int id)? addProductToFavorite,
+    TResult? Function(int id)? deleteProductFromFavorite,
   }) {
     return changeSelectedSizeIndex?.call(index);
   }
@@ -1939,6 +2227,10 @@ class _$ChangeSelectedSizeIndexImpl implements _ChangeSelectedSizeIndex {
     TResult Function(int index)? changeVariationData,
     TResult Function(int index)? changeSelectedSizeIndex,
     TResult Function(int index)? changeSelectedMaterialIndex,
+    TResult Function(int id)? addProductToCart,
+    TResult Function(int id)? deleteProductFromCart,
+    TResult Function(int id)? addProductToFavorite,
+    TResult Function(int id)? deleteProductFromFavorite,
     required TResult orElse(),
   }) {
     if (changeSelectedSizeIndex != null) {
@@ -1969,6 +2261,12 @@ class _$ChangeSelectedSizeIndexImpl implements _ChangeSelectedSizeIndex {
         changeSelectedSizeIndex,
     required TResult Function(_ChangeSelectedMaterialIndex value)
         changeSelectedMaterialIndex,
+    required TResult Function(_AddProductToCart value) addProductToCart,
+    required TResult Function(_DeleteProductFromCart value)
+        deleteProductFromCart,
+    required TResult Function(_AddProductToFavorite value) addProductToFavorite,
+    required TResult Function(_DeleteProductFromFavorite value)
+        deleteProductFromFavorite,
   }) {
     return changeSelectedSizeIndex(this);
   }
@@ -1991,6 +2289,11 @@ class _$ChangeSelectedSizeIndexImpl implements _ChangeSelectedSizeIndex {
     TResult? Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
     TResult? Function(_ChangeSelectedMaterialIndex value)?
         changeSelectedMaterialIndex,
+    TResult? Function(_AddProductToCart value)? addProductToCart,
+    TResult? Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult? Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult? Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
   }) {
     return changeSelectedSizeIndex?.call(this);
   }
@@ -2011,6 +2314,11 @@ class _$ChangeSelectedSizeIndexImpl implements _ChangeSelectedSizeIndex {
     TResult Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
     TResult Function(_ChangeSelectedMaterialIndex value)?
         changeSelectedMaterialIndex,
+    TResult Function(_AddProductToCart value)? addProductToCart,
+    TResult Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
     required TResult orElse(),
   }) {
     if (changeSelectedSizeIndex != null) {
@@ -2110,6 +2418,10 @@ class _$ChangeSelectedMaterialIndexImpl
     required TResult Function(int index) changeVariationData,
     required TResult Function(int index) changeSelectedSizeIndex,
     required TResult Function(int index) changeSelectedMaterialIndex,
+    required TResult Function(int id) addProductToCart,
+    required TResult Function(int id) deleteProductFromCart,
+    required TResult Function(int id) addProductToFavorite,
+    required TResult Function(int id) deleteProductFromFavorite,
   }) {
     return changeSelectedMaterialIndex(index);
   }
@@ -2128,6 +2440,10 @@ class _$ChangeSelectedMaterialIndexImpl
     TResult? Function(int index)? changeVariationData,
     TResult? Function(int index)? changeSelectedSizeIndex,
     TResult? Function(int index)? changeSelectedMaterialIndex,
+    TResult? Function(int id)? addProductToCart,
+    TResult? Function(int id)? deleteProductFromCart,
+    TResult? Function(int id)? addProductToFavorite,
+    TResult? Function(int id)? deleteProductFromFavorite,
   }) {
     return changeSelectedMaterialIndex?.call(index);
   }
@@ -2146,6 +2462,10 @@ class _$ChangeSelectedMaterialIndexImpl
     TResult Function(int index)? changeVariationData,
     TResult Function(int index)? changeSelectedSizeIndex,
     TResult Function(int index)? changeSelectedMaterialIndex,
+    TResult Function(int id)? addProductToCart,
+    TResult Function(int id)? deleteProductFromCart,
+    TResult Function(int id)? addProductToFavorite,
+    TResult Function(int id)? deleteProductFromFavorite,
     required TResult orElse(),
   }) {
     if (changeSelectedMaterialIndex != null) {
@@ -2176,6 +2496,12 @@ class _$ChangeSelectedMaterialIndexImpl
         changeSelectedSizeIndex,
     required TResult Function(_ChangeSelectedMaterialIndex value)
         changeSelectedMaterialIndex,
+    required TResult Function(_AddProductToCart value) addProductToCart,
+    required TResult Function(_DeleteProductFromCart value)
+        deleteProductFromCart,
+    required TResult Function(_AddProductToFavorite value) addProductToFavorite,
+    required TResult Function(_DeleteProductFromFavorite value)
+        deleteProductFromFavorite,
   }) {
     return changeSelectedMaterialIndex(this);
   }
@@ -2198,6 +2524,11 @@ class _$ChangeSelectedMaterialIndexImpl
     TResult? Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
     TResult? Function(_ChangeSelectedMaterialIndex value)?
         changeSelectedMaterialIndex,
+    TResult? Function(_AddProductToCart value)? addProductToCart,
+    TResult? Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult? Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult? Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
   }) {
     return changeSelectedMaterialIndex?.call(this);
   }
@@ -2218,6 +2549,11 @@ class _$ChangeSelectedMaterialIndexImpl
     TResult Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
     TResult Function(_ChangeSelectedMaterialIndex value)?
         changeSelectedMaterialIndex,
+    TResult Function(_AddProductToCart value)? addProductToCart,
+    TResult Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
     required TResult orElse(),
   }) {
     if (changeSelectedMaterialIndex != null) {
@@ -2234,5 +2570,933 @@ abstract class _ChangeSelectedMaterialIndex implements ProductDetailsState {
   int get index;
   @JsonKey(ignore: true)
   _$$ChangeSelectedMaterialIndexImplCopyWith<_$ChangeSelectedMaterialIndexImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$AddProductToCartImplCopyWith<$Res> {
+  factory _$$AddProductToCartImplCopyWith(_$AddProductToCartImpl value,
+          $Res Function(_$AddProductToCartImpl) then) =
+      __$$AddProductToCartImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({int id});
+}
+
+/// @nodoc
+class __$$AddProductToCartImplCopyWithImpl<$Res>
+    extends _$ProductDetailsStateCopyWithImpl<$Res, _$AddProductToCartImpl>
+    implements _$$AddProductToCartImplCopyWith<$Res> {
+  __$$AddProductToCartImplCopyWithImpl(_$AddProductToCartImpl _value,
+      $Res Function(_$AddProductToCartImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+  }) {
+    return _then(_$AddProductToCartImpl(
+      null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$AddProductToCartImpl implements _AddProductToCart {
+  const _$AddProductToCartImpl(this.id);
+
+  @override
+  final int id;
+
+  @override
+  String toString() {
+    return 'ProductDetailsState.addProductToCart(id: $id)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$AddProductToCartImpl &&
+            (identical(other.id, id) || other.id == id));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, id);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$AddProductToCartImplCopyWith<_$AddProductToCartImpl> get copyWith =>
+      __$$AddProductToCartImplCopyWithImpl<_$AddProductToCartImpl>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initPageController,
+    required TResult Function() disposePageController,
+    required TResult Function() getProductDetailsLoading,
+    required TResult Function() getProductDetailsSuccess,
+    required TResult Function(String errorMsg) getProductDetailsError,
+    required TResult Function(int index) changeImageIndexFromSlider,
+    required TResult Function(int index) changeImageIndexFromRow,
+    required TResult Function(int index) changeVariationData,
+    required TResult Function(int index) changeSelectedSizeIndex,
+    required TResult Function(int index) changeSelectedMaterialIndex,
+    required TResult Function(int id) addProductToCart,
+    required TResult Function(int id) deleteProductFromCart,
+    required TResult Function(int id) addProductToFavorite,
+    required TResult Function(int id) deleteProductFromFavorite,
+  }) {
+    return addProductToCart(id);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initPageController,
+    TResult? Function()? disposePageController,
+    TResult? Function()? getProductDetailsLoading,
+    TResult? Function()? getProductDetailsSuccess,
+    TResult? Function(String errorMsg)? getProductDetailsError,
+    TResult? Function(int index)? changeImageIndexFromSlider,
+    TResult? Function(int index)? changeImageIndexFromRow,
+    TResult? Function(int index)? changeVariationData,
+    TResult? Function(int index)? changeSelectedSizeIndex,
+    TResult? Function(int index)? changeSelectedMaterialIndex,
+    TResult? Function(int id)? addProductToCart,
+    TResult? Function(int id)? deleteProductFromCart,
+    TResult? Function(int id)? addProductToFavorite,
+    TResult? Function(int id)? deleteProductFromFavorite,
+  }) {
+    return addProductToCart?.call(id);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initPageController,
+    TResult Function()? disposePageController,
+    TResult Function()? getProductDetailsLoading,
+    TResult Function()? getProductDetailsSuccess,
+    TResult Function(String errorMsg)? getProductDetailsError,
+    TResult Function(int index)? changeImageIndexFromSlider,
+    TResult Function(int index)? changeImageIndexFromRow,
+    TResult Function(int index)? changeVariationData,
+    TResult Function(int index)? changeSelectedSizeIndex,
+    TResult Function(int index)? changeSelectedMaterialIndex,
+    TResult Function(int id)? addProductToCart,
+    TResult Function(int id)? deleteProductFromCart,
+    TResult Function(int id)? addProductToFavorite,
+    TResult Function(int id)? deleteProductFromFavorite,
+    required TResult orElse(),
+  }) {
+    if (addProductToCart != null) {
+      return addProductToCart(id);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitPageController value) initPageController,
+    required TResult Function(_DisposePageController value)
+        disposePageController,
+    required TResult Function(_GetProductDetailsLoading value)
+        getProductDetailsLoading,
+    required TResult Function(_GetProductDetailsSuccess value)
+        getProductDetailsSuccess,
+    required TResult Function(_GetProductDetailsError value)
+        getProductDetailsError,
+    required TResult Function(_ChangeImageIndexFromSlider value)
+        changeImageIndexFromSlider,
+    required TResult Function(_ChangeImageIndexFromRow value)
+        changeImageIndexFromRow,
+    required TResult Function(_ChangeVariationData value) changeVariationData,
+    required TResult Function(_ChangeSelectedSizeIndex value)
+        changeSelectedSizeIndex,
+    required TResult Function(_ChangeSelectedMaterialIndex value)
+        changeSelectedMaterialIndex,
+    required TResult Function(_AddProductToCart value) addProductToCart,
+    required TResult Function(_DeleteProductFromCart value)
+        deleteProductFromCart,
+    required TResult Function(_AddProductToFavorite value) addProductToFavorite,
+    required TResult Function(_DeleteProductFromFavorite value)
+        deleteProductFromFavorite,
+  }) {
+    return addProductToCart(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitPageController value)? initPageController,
+    TResult? Function(_DisposePageController value)? disposePageController,
+    TResult? Function(_GetProductDetailsLoading value)?
+        getProductDetailsLoading,
+    TResult? Function(_GetProductDetailsSuccess value)?
+        getProductDetailsSuccess,
+    TResult? Function(_GetProductDetailsError value)? getProductDetailsError,
+    TResult? Function(_ChangeImageIndexFromSlider value)?
+        changeImageIndexFromSlider,
+    TResult? Function(_ChangeImageIndexFromRow value)? changeImageIndexFromRow,
+    TResult? Function(_ChangeVariationData value)? changeVariationData,
+    TResult? Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
+    TResult? Function(_ChangeSelectedMaterialIndex value)?
+        changeSelectedMaterialIndex,
+    TResult? Function(_AddProductToCart value)? addProductToCart,
+    TResult? Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult? Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult? Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
+  }) {
+    return addProductToCart?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitPageController value)? initPageController,
+    TResult Function(_DisposePageController value)? disposePageController,
+    TResult Function(_GetProductDetailsLoading value)? getProductDetailsLoading,
+    TResult Function(_GetProductDetailsSuccess value)? getProductDetailsSuccess,
+    TResult Function(_GetProductDetailsError value)? getProductDetailsError,
+    TResult Function(_ChangeImageIndexFromSlider value)?
+        changeImageIndexFromSlider,
+    TResult Function(_ChangeImageIndexFromRow value)? changeImageIndexFromRow,
+    TResult Function(_ChangeVariationData value)? changeVariationData,
+    TResult Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
+    TResult Function(_ChangeSelectedMaterialIndex value)?
+        changeSelectedMaterialIndex,
+    TResult Function(_AddProductToCart value)? addProductToCart,
+    TResult Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
+    required TResult orElse(),
+  }) {
+    if (addProductToCart != null) {
+      return addProductToCart(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _AddProductToCart implements ProductDetailsState {
+  const factory _AddProductToCart(final int id) = _$AddProductToCartImpl;
+
+  int get id;
+  @JsonKey(ignore: true)
+  _$$AddProductToCartImplCopyWith<_$AddProductToCartImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$DeleteProductFromCartImplCopyWith<$Res> {
+  factory _$$DeleteProductFromCartImplCopyWith(
+          _$DeleteProductFromCartImpl value,
+          $Res Function(_$DeleteProductFromCartImpl) then) =
+      __$$DeleteProductFromCartImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({int id});
+}
+
+/// @nodoc
+class __$$DeleteProductFromCartImplCopyWithImpl<$Res>
+    extends _$ProductDetailsStateCopyWithImpl<$Res, _$DeleteProductFromCartImpl>
+    implements _$$DeleteProductFromCartImplCopyWith<$Res> {
+  __$$DeleteProductFromCartImplCopyWithImpl(_$DeleteProductFromCartImpl _value,
+      $Res Function(_$DeleteProductFromCartImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+  }) {
+    return _then(_$DeleteProductFromCartImpl(
+      null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$DeleteProductFromCartImpl implements _DeleteProductFromCart {
+  const _$DeleteProductFromCartImpl(this.id);
+
+  @override
+  final int id;
+
+  @override
+  String toString() {
+    return 'ProductDetailsState.deleteProductFromCart(id: $id)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$DeleteProductFromCartImpl &&
+            (identical(other.id, id) || other.id == id));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, id);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$DeleteProductFromCartImplCopyWith<_$DeleteProductFromCartImpl>
+      get copyWith => __$$DeleteProductFromCartImplCopyWithImpl<
+          _$DeleteProductFromCartImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initPageController,
+    required TResult Function() disposePageController,
+    required TResult Function() getProductDetailsLoading,
+    required TResult Function() getProductDetailsSuccess,
+    required TResult Function(String errorMsg) getProductDetailsError,
+    required TResult Function(int index) changeImageIndexFromSlider,
+    required TResult Function(int index) changeImageIndexFromRow,
+    required TResult Function(int index) changeVariationData,
+    required TResult Function(int index) changeSelectedSizeIndex,
+    required TResult Function(int index) changeSelectedMaterialIndex,
+    required TResult Function(int id) addProductToCart,
+    required TResult Function(int id) deleteProductFromCart,
+    required TResult Function(int id) addProductToFavorite,
+    required TResult Function(int id) deleteProductFromFavorite,
+  }) {
+    return deleteProductFromCart(id);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initPageController,
+    TResult? Function()? disposePageController,
+    TResult? Function()? getProductDetailsLoading,
+    TResult? Function()? getProductDetailsSuccess,
+    TResult? Function(String errorMsg)? getProductDetailsError,
+    TResult? Function(int index)? changeImageIndexFromSlider,
+    TResult? Function(int index)? changeImageIndexFromRow,
+    TResult? Function(int index)? changeVariationData,
+    TResult? Function(int index)? changeSelectedSizeIndex,
+    TResult? Function(int index)? changeSelectedMaterialIndex,
+    TResult? Function(int id)? addProductToCart,
+    TResult? Function(int id)? deleteProductFromCart,
+    TResult? Function(int id)? addProductToFavorite,
+    TResult? Function(int id)? deleteProductFromFavorite,
+  }) {
+    return deleteProductFromCart?.call(id);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initPageController,
+    TResult Function()? disposePageController,
+    TResult Function()? getProductDetailsLoading,
+    TResult Function()? getProductDetailsSuccess,
+    TResult Function(String errorMsg)? getProductDetailsError,
+    TResult Function(int index)? changeImageIndexFromSlider,
+    TResult Function(int index)? changeImageIndexFromRow,
+    TResult Function(int index)? changeVariationData,
+    TResult Function(int index)? changeSelectedSizeIndex,
+    TResult Function(int index)? changeSelectedMaterialIndex,
+    TResult Function(int id)? addProductToCart,
+    TResult Function(int id)? deleteProductFromCart,
+    TResult Function(int id)? addProductToFavorite,
+    TResult Function(int id)? deleteProductFromFavorite,
+    required TResult orElse(),
+  }) {
+    if (deleteProductFromCart != null) {
+      return deleteProductFromCart(id);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitPageController value) initPageController,
+    required TResult Function(_DisposePageController value)
+        disposePageController,
+    required TResult Function(_GetProductDetailsLoading value)
+        getProductDetailsLoading,
+    required TResult Function(_GetProductDetailsSuccess value)
+        getProductDetailsSuccess,
+    required TResult Function(_GetProductDetailsError value)
+        getProductDetailsError,
+    required TResult Function(_ChangeImageIndexFromSlider value)
+        changeImageIndexFromSlider,
+    required TResult Function(_ChangeImageIndexFromRow value)
+        changeImageIndexFromRow,
+    required TResult Function(_ChangeVariationData value) changeVariationData,
+    required TResult Function(_ChangeSelectedSizeIndex value)
+        changeSelectedSizeIndex,
+    required TResult Function(_ChangeSelectedMaterialIndex value)
+        changeSelectedMaterialIndex,
+    required TResult Function(_AddProductToCart value) addProductToCart,
+    required TResult Function(_DeleteProductFromCart value)
+        deleteProductFromCart,
+    required TResult Function(_AddProductToFavorite value) addProductToFavorite,
+    required TResult Function(_DeleteProductFromFavorite value)
+        deleteProductFromFavorite,
+  }) {
+    return deleteProductFromCart(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitPageController value)? initPageController,
+    TResult? Function(_DisposePageController value)? disposePageController,
+    TResult? Function(_GetProductDetailsLoading value)?
+        getProductDetailsLoading,
+    TResult? Function(_GetProductDetailsSuccess value)?
+        getProductDetailsSuccess,
+    TResult? Function(_GetProductDetailsError value)? getProductDetailsError,
+    TResult? Function(_ChangeImageIndexFromSlider value)?
+        changeImageIndexFromSlider,
+    TResult? Function(_ChangeImageIndexFromRow value)? changeImageIndexFromRow,
+    TResult? Function(_ChangeVariationData value)? changeVariationData,
+    TResult? Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
+    TResult? Function(_ChangeSelectedMaterialIndex value)?
+        changeSelectedMaterialIndex,
+    TResult? Function(_AddProductToCart value)? addProductToCart,
+    TResult? Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult? Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult? Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
+  }) {
+    return deleteProductFromCart?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitPageController value)? initPageController,
+    TResult Function(_DisposePageController value)? disposePageController,
+    TResult Function(_GetProductDetailsLoading value)? getProductDetailsLoading,
+    TResult Function(_GetProductDetailsSuccess value)? getProductDetailsSuccess,
+    TResult Function(_GetProductDetailsError value)? getProductDetailsError,
+    TResult Function(_ChangeImageIndexFromSlider value)?
+        changeImageIndexFromSlider,
+    TResult Function(_ChangeImageIndexFromRow value)? changeImageIndexFromRow,
+    TResult Function(_ChangeVariationData value)? changeVariationData,
+    TResult Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
+    TResult Function(_ChangeSelectedMaterialIndex value)?
+        changeSelectedMaterialIndex,
+    TResult Function(_AddProductToCart value)? addProductToCart,
+    TResult Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
+    required TResult orElse(),
+  }) {
+    if (deleteProductFromCart != null) {
+      return deleteProductFromCart(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _DeleteProductFromCart implements ProductDetailsState {
+  const factory _DeleteProductFromCart(final int id) =
+      _$DeleteProductFromCartImpl;
+
+  int get id;
+  @JsonKey(ignore: true)
+  _$$DeleteProductFromCartImplCopyWith<_$DeleteProductFromCartImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$AddProductToFavoriteImplCopyWith<$Res> {
+  factory _$$AddProductToFavoriteImplCopyWith(_$AddProductToFavoriteImpl value,
+          $Res Function(_$AddProductToFavoriteImpl) then) =
+      __$$AddProductToFavoriteImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({int id});
+}
+
+/// @nodoc
+class __$$AddProductToFavoriteImplCopyWithImpl<$Res>
+    extends _$ProductDetailsStateCopyWithImpl<$Res, _$AddProductToFavoriteImpl>
+    implements _$$AddProductToFavoriteImplCopyWith<$Res> {
+  __$$AddProductToFavoriteImplCopyWithImpl(_$AddProductToFavoriteImpl _value,
+      $Res Function(_$AddProductToFavoriteImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+  }) {
+    return _then(_$AddProductToFavoriteImpl(
+      null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$AddProductToFavoriteImpl implements _AddProductToFavorite {
+  const _$AddProductToFavoriteImpl(this.id);
+
+  @override
+  final int id;
+
+  @override
+  String toString() {
+    return 'ProductDetailsState.addProductToFavorite(id: $id)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$AddProductToFavoriteImpl &&
+            (identical(other.id, id) || other.id == id));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, id);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$AddProductToFavoriteImplCopyWith<_$AddProductToFavoriteImpl>
+      get copyWith =>
+          __$$AddProductToFavoriteImplCopyWithImpl<_$AddProductToFavoriteImpl>(
+              this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initPageController,
+    required TResult Function() disposePageController,
+    required TResult Function() getProductDetailsLoading,
+    required TResult Function() getProductDetailsSuccess,
+    required TResult Function(String errorMsg) getProductDetailsError,
+    required TResult Function(int index) changeImageIndexFromSlider,
+    required TResult Function(int index) changeImageIndexFromRow,
+    required TResult Function(int index) changeVariationData,
+    required TResult Function(int index) changeSelectedSizeIndex,
+    required TResult Function(int index) changeSelectedMaterialIndex,
+    required TResult Function(int id) addProductToCart,
+    required TResult Function(int id) deleteProductFromCart,
+    required TResult Function(int id) addProductToFavorite,
+    required TResult Function(int id) deleteProductFromFavorite,
+  }) {
+    return addProductToFavorite(id);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initPageController,
+    TResult? Function()? disposePageController,
+    TResult? Function()? getProductDetailsLoading,
+    TResult? Function()? getProductDetailsSuccess,
+    TResult? Function(String errorMsg)? getProductDetailsError,
+    TResult? Function(int index)? changeImageIndexFromSlider,
+    TResult? Function(int index)? changeImageIndexFromRow,
+    TResult? Function(int index)? changeVariationData,
+    TResult? Function(int index)? changeSelectedSizeIndex,
+    TResult? Function(int index)? changeSelectedMaterialIndex,
+    TResult? Function(int id)? addProductToCart,
+    TResult? Function(int id)? deleteProductFromCart,
+    TResult? Function(int id)? addProductToFavorite,
+    TResult? Function(int id)? deleteProductFromFavorite,
+  }) {
+    return addProductToFavorite?.call(id);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initPageController,
+    TResult Function()? disposePageController,
+    TResult Function()? getProductDetailsLoading,
+    TResult Function()? getProductDetailsSuccess,
+    TResult Function(String errorMsg)? getProductDetailsError,
+    TResult Function(int index)? changeImageIndexFromSlider,
+    TResult Function(int index)? changeImageIndexFromRow,
+    TResult Function(int index)? changeVariationData,
+    TResult Function(int index)? changeSelectedSizeIndex,
+    TResult Function(int index)? changeSelectedMaterialIndex,
+    TResult Function(int id)? addProductToCart,
+    TResult Function(int id)? deleteProductFromCart,
+    TResult Function(int id)? addProductToFavorite,
+    TResult Function(int id)? deleteProductFromFavorite,
+    required TResult orElse(),
+  }) {
+    if (addProductToFavorite != null) {
+      return addProductToFavorite(id);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitPageController value) initPageController,
+    required TResult Function(_DisposePageController value)
+        disposePageController,
+    required TResult Function(_GetProductDetailsLoading value)
+        getProductDetailsLoading,
+    required TResult Function(_GetProductDetailsSuccess value)
+        getProductDetailsSuccess,
+    required TResult Function(_GetProductDetailsError value)
+        getProductDetailsError,
+    required TResult Function(_ChangeImageIndexFromSlider value)
+        changeImageIndexFromSlider,
+    required TResult Function(_ChangeImageIndexFromRow value)
+        changeImageIndexFromRow,
+    required TResult Function(_ChangeVariationData value) changeVariationData,
+    required TResult Function(_ChangeSelectedSizeIndex value)
+        changeSelectedSizeIndex,
+    required TResult Function(_ChangeSelectedMaterialIndex value)
+        changeSelectedMaterialIndex,
+    required TResult Function(_AddProductToCart value) addProductToCart,
+    required TResult Function(_DeleteProductFromCart value)
+        deleteProductFromCart,
+    required TResult Function(_AddProductToFavorite value) addProductToFavorite,
+    required TResult Function(_DeleteProductFromFavorite value)
+        deleteProductFromFavorite,
+  }) {
+    return addProductToFavorite(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitPageController value)? initPageController,
+    TResult? Function(_DisposePageController value)? disposePageController,
+    TResult? Function(_GetProductDetailsLoading value)?
+        getProductDetailsLoading,
+    TResult? Function(_GetProductDetailsSuccess value)?
+        getProductDetailsSuccess,
+    TResult? Function(_GetProductDetailsError value)? getProductDetailsError,
+    TResult? Function(_ChangeImageIndexFromSlider value)?
+        changeImageIndexFromSlider,
+    TResult? Function(_ChangeImageIndexFromRow value)? changeImageIndexFromRow,
+    TResult? Function(_ChangeVariationData value)? changeVariationData,
+    TResult? Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
+    TResult? Function(_ChangeSelectedMaterialIndex value)?
+        changeSelectedMaterialIndex,
+    TResult? Function(_AddProductToCart value)? addProductToCart,
+    TResult? Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult? Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult? Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
+  }) {
+    return addProductToFavorite?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitPageController value)? initPageController,
+    TResult Function(_DisposePageController value)? disposePageController,
+    TResult Function(_GetProductDetailsLoading value)? getProductDetailsLoading,
+    TResult Function(_GetProductDetailsSuccess value)? getProductDetailsSuccess,
+    TResult Function(_GetProductDetailsError value)? getProductDetailsError,
+    TResult Function(_ChangeImageIndexFromSlider value)?
+        changeImageIndexFromSlider,
+    TResult Function(_ChangeImageIndexFromRow value)? changeImageIndexFromRow,
+    TResult Function(_ChangeVariationData value)? changeVariationData,
+    TResult Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
+    TResult Function(_ChangeSelectedMaterialIndex value)?
+        changeSelectedMaterialIndex,
+    TResult Function(_AddProductToCart value)? addProductToCart,
+    TResult Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
+    required TResult orElse(),
+  }) {
+    if (addProductToFavorite != null) {
+      return addProductToFavorite(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _AddProductToFavorite implements ProductDetailsState {
+  const factory _AddProductToFavorite(final int id) =
+      _$AddProductToFavoriteImpl;
+
+  int get id;
+  @JsonKey(ignore: true)
+  _$$AddProductToFavoriteImplCopyWith<_$AddProductToFavoriteImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$DeleteProductFromFavoriteImplCopyWith<$Res> {
+  factory _$$DeleteProductFromFavoriteImplCopyWith(
+          _$DeleteProductFromFavoriteImpl value,
+          $Res Function(_$DeleteProductFromFavoriteImpl) then) =
+      __$$DeleteProductFromFavoriteImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({int id});
+}
+
+/// @nodoc
+class __$$DeleteProductFromFavoriteImplCopyWithImpl<$Res>
+    extends _$ProductDetailsStateCopyWithImpl<$Res,
+        _$DeleteProductFromFavoriteImpl>
+    implements _$$DeleteProductFromFavoriteImplCopyWith<$Res> {
+  __$$DeleteProductFromFavoriteImplCopyWithImpl(
+      _$DeleteProductFromFavoriteImpl _value,
+      $Res Function(_$DeleteProductFromFavoriteImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+  }) {
+    return _then(_$DeleteProductFromFavoriteImpl(
+      null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$DeleteProductFromFavoriteImpl implements _DeleteProductFromFavorite {
+  const _$DeleteProductFromFavoriteImpl(this.id);
+
+  @override
+  final int id;
+
+  @override
+  String toString() {
+    return 'ProductDetailsState.deleteProductFromFavorite(id: $id)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$DeleteProductFromFavoriteImpl &&
+            (identical(other.id, id) || other.id == id));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, id);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$DeleteProductFromFavoriteImplCopyWith<_$DeleteProductFromFavoriteImpl>
+      get copyWith => __$$DeleteProductFromFavoriteImplCopyWithImpl<
+          _$DeleteProductFromFavoriteImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initPageController,
+    required TResult Function() disposePageController,
+    required TResult Function() getProductDetailsLoading,
+    required TResult Function() getProductDetailsSuccess,
+    required TResult Function(String errorMsg) getProductDetailsError,
+    required TResult Function(int index) changeImageIndexFromSlider,
+    required TResult Function(int index) changeImageIndexFromRow,
+    required TResult Function(int index) changeVariationData,
+    required TResult Function(int index) changeSelectedSizeIndex,
+    required TResult Function(int index) changeSelectedMaterialIndex,
+    required TResult Function(int id) addProductToCart,
+    required TResult Function(int id) deleteProductFromCart,
+    required TResult Function(int id) addProductToFavorite,
+    required TResult Function(int id) deleteProductFromFavorite,
+  }) {
+    return deleteProductFromFavorite(id);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initPageController,
+    TResult? Function()? disposePageController,
+    TResult? Function()? getProductDetailsLoading,
+    TResult? Function()? getProductDetailsSuccess,
+    TResult? Function(String errorMsg)? getProductDetailsError,
+    TResult? Function(int index)? changeImageIndexFromSlider,
+    TResult? Function(int index)? changeImageIndexFromRow,
+    TResult? Function(int index)? changeVariationData,
+    TResult? Function(int index)? changeSelectedSizeIndex,
+    TResult? Function(int index)? changeSelectedMaterialIndex,
+    TResult? Function(int id)? addProductToCart,
+    TResult? Function(int id)? deleteProductFromCart,
+    TResult? Function(int id)? addProductToFavorite,
+    TResult? Function(int id)? deleteProductFromFavorite,
+  }) {
+    return deleteProductFromFavorite?.call(id);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initPageController,
+    TResult Function()? disposePageController,
+    TResult Function()? getProductDetailsLoading,
+    TResult Function()? getProductDetailsSuccess,
+    TResult Function(String errorMsg)? getProductDetailsError,
+    TResult Function(int index)? changeImageIndexFromSlider,
+    TResult Function(int index)? changeImageIndexFromRow,
+    TResult Function(int index)? changeVariationData,
+    TResult Function(int index)? changeSelectedSizeIndex,
+    TResult Function(int index)? changeSelectedMaterialIndex,
+    TResult Function(int id)? addProductToCart,
+    TResult Function(int id)? deleteProductFromCart,
+    TResult Function(int id)? addProductToFavorite,
+    TResult Function(int id)? deleteProductFromFavorite,
+    required TResult orElse(),
+  }) {
+    if (deleteProductFromFavorite != null) {
+      return deleteProductFromFavorite(id);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitPageController value) initPageController,
+    required TResult Function(_DisposePageController value)
+        disposePageController,
+    required TResult Function(_GetProductDetailsLoading value)
+        getProductDetailsLoading,
+    required TResult Function(_GetProductDetailsSuccess value)
+        getProductDetailsSuccess,
+    required TResult Function(_GetProductDetailsError value)
+        getProductDetailsError,
+    required TResult Function(_ChangeImageIndexFromSlider value)
+        changeImageIndexFromSlider,
+    required TResult Function(_ChangeImageIndexFromRow value)
+        changeImageIndexFromRow,
+    required TResult Function(_ChangeVariationData value) changeVariationData,
+    required TResult Function(_ChangeSelectedSizeIndex value)
+        changeSelectedSizeIndex,
+    required TResult Function(_ChangeSelectedMaterialIndex value)
+        changeSelectedMaterialIndex,
+    required TResult Function(_AddProductToCart value) addProductToCart,
+    required TResult Function(_DeleteProductFromCart value)
+        deleteProductFromCart,
+    required TResult Function(_AddProductToFavorite value) addProductToFavorite,
+    required TResult Function(_DeleteProductFromFavorite value)
+        deleteProductFromFavorite,
+  }) {
+    return deleteProductFromFavorite(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitPageController value)? initPageController,
+    TResult? Function(_DisposePageController value)? disposePageController,
+    TResult? Function(_GetProductDetailsLoading value)?
+        getProductDetailsLoading,
+    TResult? Function(_GetProductDetailsSuccess value)?
+        getProductDetailsSuccess,
+    TResult? Function(_GetProductDetailsError value)? getProductDetailsError,
+    TResult? Function(_ChangeImageIndexFromSlider value)?
+        changeImageIndexFromSlider,
+    TResult? Function(_ChangeImageIndexFromRow value)? changeImageIndexFromRow,
+    TResult? Function(_ChangeVariationData value)? changeVariationData,
+    TResult? Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
+    TResult? Function(_ChangeSelectedMaterialIndex value)?
+        changeSelectedMaterialIndex,
+    TResult? Function(_AddProductToCart value)? addProductToCart,
+    TResult? Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult? Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult? Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
+  }) {
+    return deleteProductFromFavorite?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitPageController value)? initPageController,
+    TResult Function(_DisposePageController value)? disposePageController,
+    TResult Function(_GetProductDetailsLoading value)? getProductDetailsLoading,
+    TResult Function(_GetProductDetailsSuccess value)? getProductDetailsSuccess,
+    TResult Function(_GetProductDetailsError value)? getProductDetailsError,
+    TResult Function(_ChangeImageIndexFromSlider value)?
+        changeImageIndexFromSlider,
+    TResult Function(_ChangeImageIndexFromRow value)? changeImageIndexFromRow,
+    TResult Function(_ChangeVariationData value)? changeVariationData,
+    TResult Function(_ChangeSelectedSizeIndex value)? changeSelectedSizeIndex,
+    TResult Function(_ChangeSelectedMaterialIndex value)?
+        changeSelectedMaterialIndex,
+    TResult Function(_AddProductToCart value)? addProductToCart,
+    TResult Function(_DeleteProductFromCart value)? deleteProductFromCart,
+    TResult Function(_AddProductToFavorite value)? addProductToFavorite,
+    TResult Function(_DeleteProductFromFavorite value)?
+        deleteProductFromFavorite,
+    required TResult orElse(),
+  }) {
+    if (deleteProductFromFavorite != null) {
+      return deleteProductFromFavorite(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _DeleteProductFromFavorite implements ProductDetailsState {
+  const factory _DeleteProductFromFavorite(final int id) =
+      _$DeleteProductFromFavoriteImpl;
+
+  int get id;
+  @JsonKey(ignore: true)
+  _$$DeleteProductFromFavoriteImplCopyWith<_$DeleteProductFromFavoriteImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

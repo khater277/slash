@@ -3,7 +3,9 @@ import 'package:get_it/get_it.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:slash/core/apis/slash/slash_api.dart';
 import 'package:slash/core/apis/slash/slash_end_points.dart';
+import 'package:slash/core/local_storage/cart_storage.dart';
 import 'package:slash/core/network/network_info.dart';
+import 'package:slash/features/cart/cubit/cart_cubit.dart';
 import 'package:slash/features/product_details/cubit/product_details_cubit.dart';
 import 'package:slash/features/product_details/data/datasources/product_details_remote_data_source.dart';
 import 'package:slash/features/product_details/data/repositories/product_details_repository_impl.dart';
@@ -12,7 +14,7 @@ import 'package:slash/features/product_details/domain/usecases/get_product_detai
 import 'package:slash/features/products/cubit/products_cubit.dart';
 import 'package:slash/features/products/data/datasources/products_remote_data_source.dart';
 import 'package:slash/features/products/data/repositories/products_repository_impl.dart';
-import 'package:slash/features/products/domain/repositories/prooducts_repository.dart';
+import 'package:slash/features/products/domain/repositories/products_repository.dart';
 import 'package:slash/features/products/domain/usecases/get_products_usecase.dart';
 
 final di = GetIt.instance;
@@ -24,6 +26,9 @@ void setupGetIt() {
       ));
   di.registerLazySingleton<ProductDetailsCubit>(() => ProductDetailsCubit(
         getProductDetailsUsecase: di(),
+      ));
+  di.registerLazySingleton<CartCubit>(() => CartCubit(
+        cartStorage: di(),
       ));
 
   /// DATASOURCES
@@ -56,8 +61,8 @@ void setupGetIt() {
   di.registerLazySingleton<GetProductDetailsUsecase>(
       () => GetProductDetailsUsecase(productDetailsRepository: di()));
 
-  // ///LOCAL STORAGE
-  // di.registerLazySingleton<UserStorage>(() => UserStorageImpl());
+  ///LOCAL STORAGE
+  di.registerLazySingleton<CartStorage>(() => CartStorageImpl());
 
   /// NETWORK INFO
   di.registerLazySingleton<NetworkInfo>(
@@ -78,7 +83,7 @@ void setupGetIt() {
       ..headers = {
         'Content-Type': 'application/json',
       }
-      ..connectTimeout = const Duration(seconds: 20)
+      ..connectTimeout = const Duration(seconds: 60)
       // ..receiveTimeout = const Duration(seconds: 60)
       ..followRedirects = false;
 

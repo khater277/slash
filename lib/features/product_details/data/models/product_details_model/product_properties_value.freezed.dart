@@ -21,7 +21,9 @@ ProductPropertiesValue _$ProductPropertiesValueFromJson(
 
 /// @nodoc
 mixin _$ProductPropertiesValue {
+  @HiveField(0)
   String? get value => throw _privateConstructorUsedError;
+  @HiveField(1)
   String? get property => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -36,7 +38,7 @@ abstract class $ProductPropertiesValueCopyWith<$Res> {
           $Res Function(ProductPropertiesValue) then) =
       _$ProductPropertiesValueCopyWithImpl<$Res, ProductPropertiesValue>;
   @useResult
-  $Res call({String? value, String? property});
+  $Res call({@HiveField(0) String? value, @HiveField(1) String? property});
 }
 
 /// @nodoc
@@ -78,7 +80,7 @@ abstract class _$$ProductPropertiesValueImplCopyWith<$Res>
       __$$ProductPropertiesValueImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String? value, String? property});
+  $Res call({@HiveField(0) String? value, @HiveField(1) String? property});
 }
 
 /// @nodoc
@@ -113,14 +115,17 @@ class __$$ProductPropertiesValueImplCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$ProductPropertiesValueImpl implements _ProductPropertiesValue {
-  _$ProductPropertiesValueImpl({this.value, this.property});
+  _$ProductPropertiesValueImpl(
+      {@HiveField(0) this.value, @HiveField(1) this.property});
 
   factory _$ProductPropertiesValueImpl.fromJson(Map<String, dynamic> json) =>
       _$$ProductPropertiesValueImplFromJson(json);
 
   @override
+  @HiveField(0)
   final String? value;
   @override
+  @HiveField(1)
   final String? property;
 
   @override
@@ -159,15 +164,17 @@ class _$ProductPropertiesValueImpl implements _ProductPropertiesValue {
 
 abstract class _ProductPropertiesValue implements ProductPropertiesValue {
   factory _ProductPropertiesValue(
-      {final String? value,
-      final String? property}) = _$ProductPropertiesValueImpl;
+      {@HiveField(0) final String? value,
+      @HiveField(1) final String? property}) = _$ProductPropertiesValueImpl;
 
   factory _ProductPropertiesValue.fromJson(Map<String, dynamic> json) =
       _$ProductPropertiesValueImpl.fromJson;
 
   @override
+  @HiveField(0)
   String? get value;
   @override
+  @HiveField(1)
   String? get property;
   @override
   @JsonKey(ignore: true)
