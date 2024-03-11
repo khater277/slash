@@ -1,16 +1,16 @@
-# slash
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#Screenshots
+![Screenshot_1710171023](https://github.com/khater277/slash/assets/66753803/032981c5-e107-4e00-89f1-8327ae167e81)
+![Screenshot_1710171020](https://github.com/khater277/slash/assets/66753803/c194a74a-effc-4726-a4e1-051f4c2e7e95)
+![Screenshot_1710171018](https://github.com/khater277/slash/assets/66753803/52cb2b23-b9de-415d-b13b-2b704929f03d)
+![Screenshot_1710171016](https://github.com/khater277/slash/assets/66753803/7831f2c9-8c2f-4a0c-ac5a-b8c309514f3e)
+![Screenshot_1710170999](https://github.com/khater277/slash/assets/66753803/b5e97f93-6055-452a-a8da-2a18a7720485)
+![Screenshot_1710170990](https://github.com/khater277/slash/assets/66753803/17c6afd8-d0f5-4d99-a327-cb098d576e66)
+![Screenshot_1710170981](https://github.com/khater277/slash/assets/66753803/2b18ac5a-2d3a-42fe-94cb-ed56cb9d93e6)
+![Screenshot_1710170969](https://github.com/khater277/slash/assets/66753803/f42a2356-8e07-422e-bd12-949d851800f6)
+![Screenshot_1710170964](https://github.com/khater277/slash/assets/66753803/22d19b87-ab2f-4791-9f80-a4749ce3347b)
+![Screenshot_1710170960](https://github.com/khater277/slash/assets/66753803/8b56fd7c-bdd2-4140-ba21-1b357e239c24)
+![Screenshot_1710170957](https://github.com/khater277/slash/assets/66753803/2b2c3485-e5a7-4de5-b2f4-edda9f19717a)
+![Screenshot_1710170953](https://github.com/khater277/slash/assets/66753803/bc849fc6-f55c-4788-9a74-d31526c69317)
+![Screenshot_1710170949](https://github.com/khater277/slash/assets/66753803/4440da10-e7a0-498a-b3d3-a13ae4e28544)
+![Screenshot_1710170936](https://github.com/khater277/slash/assets/66753803/63ed7dd2-66ff-4b50-a2f8-29e853ad5835)
+![Screenshot_1710170926](https://github.com/khater277/slash/assets/66753803/087937b5-d4fd-4291-a85c-d9bb3bed338e)
